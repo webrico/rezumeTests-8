@@ -1,0 +1,128 @@
+<!-- start main -->
+
+<div class="main">
+	<div class="left">
+		<div class="menu">
+			<ul>
+				<li>
+					<input type="checkbox" name="menu1" id="menu1" class="menuBox">
+					<a href="#">Идеи подарков</a>
+					<label for="menu1" class="toggleMenu"></label>
+						<ul class="subMenu">
+							<li><a href="#">Свадебный</a></li>
+							<li><a href="#">На день рождения</a></li>
+							<li><a href="#">Для торжественных случаев</a></li>	
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" name="menu2" id="menu2" class="menuBox">
+					<a href="#">Выбрать тип букета</a>
+					<label for="menu2" class="toggleMenu"></label>
+						<ul class="subMenu">
+							<li><a href="#">Свадебный</a></li>
+							<li><a href="#">На день рождения</a></li>
+							<li><a href="#">Для торжественных случаев</a></li>	
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" name="menu3" id="menu3" class="menuBox">
+					<a href="#">Стиль букета</a>
+					<label for="menu3" class="toggleMenu"></label>
+						<ul class="subMenu">
+							<li><a href="#">Свадебный</a></li>
+							<li><a href="#">На день рождения</a></li>
+							<li><a href="#">Для торжественных случаев</a></li>	
+						</ul>
+				</li>
+				<li>
+					<input type="checkbox" name="menu4" id="menu4" class="menuBox">
+					<a href="#">Выбрать цену</a>
+					<label for="menu4" class="toggleMenu"></label>
+						<ul class="subMenu">
+							<li><a href="#">Свадебный</a></li>
+							<li><a href="#">На день рождения</a></li>
+							<li><a href="#">Для торжественных случаев</a></li>	
+						</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="selectGallery">
+			<p>Выберите Букеты:</p>
+			<a href="#">
+				<img src="img/flover1.png" alt="flover1">
+			</a>
+			<a href="#">
+				<img src="img/flover2.png" alt="flover2">
+			</a>
+			<a href="#">
+				<img src="img/flover3.png" alt="flover3">
+			</a>
+		</div>
+	</div> <!-- end left -->
+	
+	<div class="content">
+		<div class="slider-wrap">
+			<ul class="slider">
+				<li><img src="img/slider/slide01.png" alt="slide01"></li>		
+				<li><img src="img/slider/slide02.png" alt="slide02"></li>
+				<li><img src="img/slider/slide03.png" alt="slide03"></li>
+				<li><img src="img/slider/slide04.png" alt="slide04"></li>
+				<li><img src="img/slider/slide05.png" alt="slide05"></li>
+			</ul>
+			<div class="slider-dot">
+				<div class="active"></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+
+		<div class="form">
+			<div class="discount">
+				<p class="discount-price">1</p>
+			</div>
+			<p>ШАГ ПЕРВЫЙ <span>(информация о получателе)</span></p>
+			<form action="info"  method="get" accept-charset="utf-8">
+			<div class="bord"></div> <!-- пришлось лепить этот костыль, и соотв в css описывать, поплыл что-то. а потом уже поздно было передывать. надеюсь поймёте и простите) -->
+				<label for="fio">ФИО</label>
+				<div class="bord"></div>
+				<input type="text" id="fio" placeholder="обязательно для заполнения"><br>
+				<label for="adress">Адрес доставки</label>
+				<div class="bord"></div>
+				<input type="text" id="adress" placeholder="обязательно для заполнения"><br>
+				<label for="phone">Телефон</label>
+				<input type="text" id="phone" placeholder="обязательно для заполнения"><br>
+				<label for="email">E-mail</label>
+				<div class="bord"></div>
+				<input type="emil" id="email" placeholder="обязательно для заполнения"><br>
+				<input type="button" value="отправить">
+			</form>
+		</div>
+	</div><!-- end content -->
+	
+	<div class="right">
+		<form action="size" method="get" accept-charset="utf-8">
+			<p>
+				<input type="radio" name="buket" value="1">
+				&euro; 27,00 Небольшой, но красивый
+			</p>
+			<p>
+				<input type="radio" name="buket" value="2" checked>
+				&euro; 35,00 Золотая середина
+			</p>
+			<p>
+				<input type="radio" name="buket" value="3">
+				&euro; 55,00 Роскошный
+			</p>
+		</form>
+		<p class="sostav">Соcтав букета:</p>
+		<p>5 Лилий, 6 альстромерий,<br> 3 аспарагус виргатус, упаковка, зелень. </p>
+		<div class="info-buket">
+			<p>Выберите Букеты:</p>
+			<div>Букет цветов – универсальный подарок к любому празднику! 
+ Согласитесь, цветы – это универсальный подарок! Букеты с цветами дарят на день рождения, Восьмое марта и первое сентября, на свадебное торжество и юбилей, на Новый Год и день Святого Валентина. Одним словом, получать цветы приятно всем, а если букет цветов подарил любимый </div>
+		</div>
+		</div><!-- end right -->
+</div>
+<!-- end main -->
